@@ -6,5 +6,6 @@ LABEL   maintainer="Marcel Rickl <mail@marcelrickl.de" \
 RUN apt update
 RUN apt install nextcloud-desktop-cmd -y
 COPY entry.sh /entry.sh
+RUN chmod +x /entry.sh
 
 ENTRYPOINT [ "/entry.sh" ]
