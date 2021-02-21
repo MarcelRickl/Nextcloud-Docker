@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # check to see if needed env vars have been passed
 if [ -z "${NEXTCLOUD_URL}" ]
