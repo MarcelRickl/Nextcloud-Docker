@@ -6,7 +6,7 @@ LABEL   maintainer="Marcel Rickl <mail@marcelrickl.de" \
 RUN apt update
 RUN apt install nextcloud-desktop-cmd -y
 RUN mkdir -p /data
-COPY entry.sh /entry.sh
-RUN chmod +x /entry.sh
+COPY entry.sh /home/entry.sh
+RUN chmod +x /home/entry.sh
 
-ENTRYPOINT [ "/entry.sh" ]
+ENTRYPOINT [ "/home/entry.sh" ]
