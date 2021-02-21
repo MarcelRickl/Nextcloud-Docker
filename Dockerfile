@@ -1,7 +1,7 @@
 FROM debian:buster
 LABEL   maintainer="Marcel Rickl <mail@marcelrickl.de" \
         description="Nextcloud docker Client" \
-        documentation="https://marcelrickl.de/docker/dockernextcloudi.html" 
+        documentation="https://marcelrickl.de/docker/dockernextcloud.html" 
 
 RUN apt update
 RUN apt install nextcloud-desktop-cmd -y
