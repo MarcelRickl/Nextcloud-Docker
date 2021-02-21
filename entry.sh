@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # check to see if needed env vars have been passed
 if [ -z "${NEXTCLOUD_URL}" ]
@@ -30,4 +30,4 @@ fi
 OPTIONS="${OPTIONS:---non-interactive}"
 
 # execute nextcloud sync
-exec nextcloudcmd -u "${USERNAME}" -p "${PASSWORD}" ${OPTIONS} /data "${NEXTCLOUD_URL}"
+nextcloudcmd -u "${USERNAME}" -p "${PASSWORD}" ${OPTIONS} /data "${NEXTCLOUD_URL}"
