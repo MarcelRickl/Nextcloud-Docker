@@ -26,8 +26,5 @@ then
   exit 1
 fi
 
-# make options available
-OPTIONS="${OPTIONS:---non-interactive}"
-
 # execute nextcloud sync
-nextcloudcmd -u "${USERNAME}" -p "${PASSWORD}" ${OPTIONS} /data "${NEXTCLOUD_URL}"
+ exec nextcloudcmd -u "${USERNAME}" -p "${PASSWORD}" ${OPTIONS} /data "${NEXTCLOUD_URL}"
