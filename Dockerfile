@@ -9,4 +9,4 @@ RUN mkdir -p /data
 COPY entry.sh /home/entry.sh
 RUN chmod +x /home/entry.sh
 
-ENTRYPOINT [ "/home/entry.sh" ]
+CMD [ "/home/entry.sh" ]
