@@ -9,4 +9,4 @@ RUN mkdir -p /data
 COPY entry.sh /entry.sh
 RUN chmod 777 /entry.sh
 
-ENTRYPOINT [ "/entry.sh" ]
+ENTRYPOINT [ "./entry.sh" ]
